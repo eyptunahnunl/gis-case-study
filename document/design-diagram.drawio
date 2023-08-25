@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" modified="2023-08-25T11:48:21.011Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="bJKcKB42pdyxxbeZ9Hri" version="21.6.8">
+  <diagram name="Sayfa -1" id="VIvPxowawO4-w-PeL_9Y">
+    <mxGraphModel dx="2534" dy="1239" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-1" value="İlçeler (.shp)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="10" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-3" value="Console App" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="205" width="270" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-4" value="Maden Sınırları (.dxf)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="10" y="250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-6" value="kullanıcı excel" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="10" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-8" value="API" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="10" y="460" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="WNFsR8Vi4PwQBDSD8mDU-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="180" as="sourcePoint" />
+            <mxPoint x="140" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="WNFsR8Vi4PwQBDSD8mDU-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="289.5" as="sourcePoint" />
+            <mxPoint x="380" y="289.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="WNFsR8Vi4PwQBDSD8mDU-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="400" as="sourcePoint" />
+            <mxPoint x="140" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="WNFsR8Vi4PwQBDSD8mDU-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="497" as="sourcePoint" />
+            <mxPoint x="400" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-16" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="340" as="sourcePoint" />
+            <mxPoint x="830" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WNFsR8Vi4PwQBDSD8mDU-17" target="WNFsR8Vi4PwQBDSD8mDU-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-17" value="DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="850" y="302.5" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WNFsR8Vi4PwQBDSD8mDU-20" target="WNFsR8Vi4PwQBDSD8mDU-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WNFsR8Vi4PwQBDSD8mDU-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1420" y="342.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1300" y="343" />
+              <mxPoint x="1300" y="343" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-20" value="GeoServer" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1161" y="302.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.021;entryY=0.369;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="WNFsR8Vi4PwQBDSD8mDU-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1430" y="331.2499999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WNFsR8Vi4PwQBDSD8mDU-27" value="User Interface" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
