@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Sayfa -1" id="VIvPxowawO4-w-PeL_9Y">
-        <mxGraphModel dx="1802" dy="953" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1138" dy="602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -8,7 +8,7 @@
                     <mxGeometry x="10" y="140" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="WNFsR8Vi4PwQBDSD8mDU-3" value="Console App" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="400" y="205" width="270" height="270" as="geometry"/>
+                    <mxGeometry x="350" y="220" width="330" height="330" as="geometry"/>
                 </mxCell>
                 <mxCell id="WNFsR8Vi4PwQBDSD8mDU-4" value="Maden Sınırları (.dxf)" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="10" y="250" width="80" height="80" as="geometry"/>
