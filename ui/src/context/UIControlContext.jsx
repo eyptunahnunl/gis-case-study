@@ -9,6 +9,8 @@ export const UIControlProvider = ({ children }) => {
   const [attributeTable, setAttributeTable] =
     useState(false);
 
+  const [toolBox, setToolBox] = useState(false);
+
   const data = {
     dataEntry,
     setDataEntry,
@@ -16,6 +18,8 @@ export const UIControlProvider = ({ children }) => {
     setAttributeTable,
     locationAnalysis,
     setLocationAnalysis,
+    toolBox,
+    setToolBox,
   };
 
   return (

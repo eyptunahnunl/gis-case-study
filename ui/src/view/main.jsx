@@ -1,9 +1,14 @@
 import { Container } from "components/Map";
+import Toolbox from "components/Toolbox";
+import { MapTools } from "components/Tools";
 
 function Main() {
   return (
     <>
-      <Container></Container>
+      <Container>
+        <MapTools />
+      </Container>
+      <Toolbox />
     </>
   );
 }
