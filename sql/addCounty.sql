@@ -14,7 +14,8 @@ WHERE ST_Intersects(a.geometry, t.geometry);
 
 update pharmacy_on_duty as p 
 set dist = t.adi
-from (
+from (-- b.Nöbetçi Eczaneler verisinin İlçelerin merkez noktalarına olan uzakları hesaplanmalıdır.
+
 	 SELECT adi, st_transform(geometry, 4326) AS geometry
     FROM county
 ) as t 
@@ -31,7 +32,6 @@ from (
 where ST_Intersects(m.geometry, t.geometry);
 
 
--- b.Nöbetçi Eczaneler verisinin İlçelerin merkez noktalarına olan uzakları hesaplanmalıdır.
 
 select p.name,t.adi, st_distance(p.geometry,t.geometry) from pharmacy_on_duty p, 
 (SELECT adi, st_centroid(st_transform(geometry, 4326)) AS geometry
