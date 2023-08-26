@@ -1,13 +1,16 @@
 import { LayersProvider } from "context/LayerContext";
 import "./App.css";
 import { Main } from "view";
+import { UIControlProvider } from "context/UIControlContext";
 
 function App() {
   return (
     <>
-      <LayersProvider>
-        <Main />
-      </LayersProvider>
+      <UIControlProvider>
+        <LayersProvider>
+          <Main />
+        </LayersProvider>
+      </UIControlProvider>
     </>
   );
 }
