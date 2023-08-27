@@ -33,7 +33,7 @@ export const LayersProvider = ({ children }) => {
 
   useEffect(() => {
     const instance = axios.create({
-      baseURL: "http://localhost:8080/geoserver",
+      baseURL: "http://localhost:8085/geoserver",
     });
 
     // Birden fazla endpoint
