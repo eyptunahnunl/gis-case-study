@@ -9,6 +9,7 @@ import {
   LoadTIFF,
   LoadVectorData,
   LoadWMS,
+  LocationAnalysis,
 } from "components/Tools";
 
 function Toolbox() {
@@ -33,17 +34,21 @@ function Toolbox() {
               <Tab>Load Vector File </Tab>
               <Tab>WMS</Tab>
               <Tab>Raster</Tab>
+              <Tab>Analysis</Tab>
             </TabList>
             <TabPanel value={0}>
               <LoadVectorData />
             </TabPanel>
             <TabPanel value={1}>
-              wms
+              load wms
               <LoadWMS />
             </TabPanel>
             <TabPanel value={2}>
-              raster
+              load geotiff
               <LoadTIFF />
+            </TabPanel>
+            <TabPanel value={3}>
+              <LocationAnalysis />
             </TabPanel>
           </Tabs>
         </div>
