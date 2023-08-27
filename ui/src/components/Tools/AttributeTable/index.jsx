@@ -20,8 +20,9 @@ function AttributeTable() {
 
   let layerPropertyNames = [];
 
-  console.log("layerdata", layersData);
-
+  useEffect(() => {
+    console.log("render attribute table");
+  });
   useEffect(() => {
     if (layersData.length !== 0) {
       const activeLayer = layersData.filter(

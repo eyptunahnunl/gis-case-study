@@ -5,15 +5,22 @@ import { GeoJSON, LayersControl } from "react-leaflet";
 import L from "leaflet";
 
 function VectorLayer({ name, data }) {
-  const { setActiveFId, activeFId, setActiveLayerID } =
-    useContext(LayersContext);
+  const {
+    setActiveFId,
+    activeFId,
+    setActiveLayerID,
+    activeLayerID,
+  } = useContext(LayersContext);
 
+  // console.log("activeLayerId", activeLayerID);
   const { apiData, setApiData } = useContext(
     LocationAnalysisContext
   );
 
   const handleOnClick = event => {
     const activeLayerId = event.layer.feature.layerID;
+    console.log("event", event);
+
     const uniqueId =
       event.layer.feature.properties.uniqueId;
     if (activeFId.includes(uniqueId)) {

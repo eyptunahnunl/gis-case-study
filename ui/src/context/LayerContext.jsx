@@ -39,19 +39,27 @@ export const LayersProvider = ({ children }) => {
     // Birden fazla endpoint
     const endpoints = [
       {
-        name: "Endpoint 2",
+        name: "pharmacy",
 
-        url: "/ne/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ne%3Acounty&maxFeatures=50&outputFormat=application%2Fjson",
+        url: "/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ne%3Apharmacy_on_duty&maxFeatures=50&outputFormat=application%2Fjson",
+        layerId: 0,
       },
-      // {
-      //   name: "applicant 1",
-      //   url: "/ne/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ne%3Aapplicants&maxFeatures=50&outputFormat=application%2Fjson",
-      // },
+      {
+        name: "applicant 1",
+        url: "/ne/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ne%3Aapplicants&maxFeatures=50&outputFormat=application%2Fjson",
+        layerId: 1,
+      },
 
-      // {
-      //   name: "Endpoint 3",
-      //   url: "ne/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ne%3Aminingarea&maxFeatures=50&outputFormat=application%2Fjson",
-      // },
+      {
+        name: "Endpoint 3",
+        url: "/ne/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ne%3Aminingarea&maxFeatures=50&outputFormat=application%2Fjson",
+        layerId: 2,
+      },
+      {
+        name: "county",
+        url: "/ne/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ne%3Acounty&maxFeatures=50&outputFormat=application%2Fjson",
+        layerId: 3,
+      },
     ];
 
     endpoints.forEach(endpoint => {
@@ -69,19 +77,17 @@ export const LayersProvider = ({ children }) => {
             feature.properties["F_ID"] = index + 1;
             feature.properties["uniqueId"] = uuidv4();
 
-            feature.layerID = layerID;
+            feature.layerID = endpoint.layerId;
           });
-          setLayerID(layerID + 1);
-
           const geoJsonLayer = {
             name: endpoint.name,
             data: test,
-            layerID: layerID,
+            layerID: endpoint.layerId,
           };
 
           console.log("object", geoJsonLayer);
-          setActiveLayerID(test.features[0].layerID);
-          setActiveLayer(test);
+          setActiveLayerID(endpoint.layerId);
+          setActiveLayer(endpoint.layerId);
           addLayer(geoJsonLayer);
         })
         .catch(error => {
