@@ -12,11 +12,17 @@ import {
 } from "components/Tools";
 
 function Toolbox() {
-  const { toolBox, setToolBox } = useContext(
-    UIControlContext
-  );
+  const {
+    toolBox,
+    setToolBox,
+    setAttributeTable,
+    attributeTable,
+  } = useContext(UIControlContext);
   const handleToolbox = () => {
     setToolBox(!toolBox);
+  };
+  const handleAttributeTable = () => {
+    setAttributeTable(!attributeTable);
   };
   return (
     <>
@@ -29,7 +35,6 @@ function Toolbox() {
               <Tab>Raster</Tab>
             </TabList>
             <TabPanel value={0}>
-              vector
               <LoadVectorData />
             </TabPanel>
             <TabPanel value={1}>
@@ -44,8 +49,12 @@ function Toolbox() {
         </div>
       )}
 
-      <div className="right-1 w-10 bottom-72  z-51 absolute flex-row  mt-0 overflow-hidden ">
+      <div className="right-10 w-10 top-1  z-51 absolute flex-row  mt-0 overflow-hidden ">
         <Button iconName="tool" onClick={handleToolbox} />
+        <Button
+          iconName="table"
+          onClick={handleAttributeTable}
+        />
       </div>
     </>
   );

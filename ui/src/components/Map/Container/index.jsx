@@ -1,4 +1,6 @@
-import { useRef } from "react";
+import axios from "axios";
+import { LoadTIFF } from "components/Tools";
+import { useEffect, useRef } from "react";
 import {
   MapContainer,
   TileLayer,
@@ -11,8 +13,8 @@ function Container({ children }) {
   return (
     <>
       <MapContainer
-        center={[41.029489, 29.005047]}
-        zoom={9}
+        center={[39.685306, 34.780926]}
+        zoom={6}
         scrollWheelZoom={true}
         zoomControl={false}
         className="h-vh z-0"

@@ -4,6 +4,8 @@ import DrawingTool from "./DrawingTool";
 import Measurment from "./Measurment";
 import LayerTool from "./LayerTool";
 
+import GeotiffLayer from "./GeotiffLayer";
+
 function MapTools() {
   return (
     <>
@@ -11,6 +13,7 @@ function MapTools() {
       <LayerTool />
       <DrawingTool />
       <Measurment />
+      <GeotiffLayer />
     </>
   );
 }

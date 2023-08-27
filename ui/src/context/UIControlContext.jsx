@@ -9,7 +9,7 @@ export const UIControlProvider = ({ children }) => {
   const [attributeTable, setAttributeTable] =
     useState(false);
 
-  const [toolBox, setToolBox] = useState(false);
+  const [toolBox, setToolBox] = useState(true);
 
   const data = {
     dataEntry,

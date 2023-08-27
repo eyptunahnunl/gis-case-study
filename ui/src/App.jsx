@@ -2,14 +2,17 @@ import { LayersProvider } from "context/LayerContext";
 import "./App.css";
 import { Main } from "view";
 import { UIControlProvider } from "context/UIControlContext";
+import { LocationAnalysisProvider } from "context/LocationAnalysisContext";
 
 function App() {
   return (
     <>
       <UIControlProvider>
-        <LayersProvider>
-          <Main />
-        </LayersProvider>
+        <LocationAnalysisProvider>
+          <LayersProvider>
+            <Main />
+          </LayersProvider>
+        </LocationAnalysisProvider>
       </UIControlProvider>
     </>
   );
