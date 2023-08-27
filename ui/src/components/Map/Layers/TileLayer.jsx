@@ -10,9 +10,6 @@ import {
 function TileLayers() {
   const { wmsLayer } = useContext(LayersContext);
 
-  const clickWms = e => {
-    console.log(e);
-  };
   return (
     <>
       <LayerGroup attribution="name">
@@ -43,27 +40,27 @@ function TileLayers() {
           />
         </LayersControl.BaseLayer>
 
-        {/* {wmsLayer?.map((item, index) => {
-        return (
-          <LayersControl.BaseLayer
-            checked
-            name={item.name}
-            key={index}
-          >
-            <WMSTileLayer
-              // layers={"AlmanMavileriOsmanlica500_1000"}
-              params={{
-                layers: item.layer,
-                transparent: true,
+        {wmsLayer?.map((item, index) => {
+          return (
+            <LayersControl.BaseLayer
+              checked
+              name={item.name}
+              key={index}
+            >
+              <WMSTileLayer
+                // layers={"AlmanMavileriOsmanlica500_1000"}
+                params={{
+                  layers: item.layer,
+                  transparent: true,
 
-                // request: "test",
-              }}
-              // layers={item.layer}
-              url={item.url}
-            />
-          </LayersControl.BaseLayer>
-        );
-      })} */}
+                  // request: "test",
+                }}
+                // layers={item.layer}
+                url={item.url}
+              />
+            </LayersControl.BaseLayer>
+          );
+        })}
       </LayerGroup>
     </>
   );
