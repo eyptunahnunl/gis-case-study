@@ -19,7 +19,6 @@ function VectorLayer({ name, data }) {
 
   const handleOnClick = event => {
     const activeLayerId = event.layer.feature.layerID;
-    console.log("event", event);
 
     const uniqueId =
       event.layer.feature.properties.uniqueId;

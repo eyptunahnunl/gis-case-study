@@ -85,7 +85,6 @@ export const LayersProvider = ({ children }) => {
             layerID: endpoint.layerId,
           };
 
-          console.log("object", geoJsonLayer);
           setActiveLayerID(endpoint.layerId);
           setActiveLayer(endpoint.layerId);
           addLayer(geoJsonLayer);

@@ -40,3 +40,15 @@ select p.name,t.adi, st_distance(p.geometry,t.geometry) from pharmacy_on_duty p,
 
 ---c. Başvuran Kişi verilerinin Nöbetçi Eczanelere olan uzaklıkları hesaplanmalıdır. 
 select a.name, p.name, st_distance(a.geometry, p.geometry) from applicants a, pharmacy_on_duty p
+
+
+
+--- tucbs uyumlulaştırma view 
+
+CREATE VIEW tucbs_Ilce AS
+	 SELECT objectid as id, 
+	 adi,nufus,alan, 
+	 il_id as IdariHiyerarsiDuzeyKodu,
+	 m_date as surumBaslangicZamani,
+	 st_transform(geometry, 3857) AS geometry
+		FROM county order by id

@@ -6,7 +6,7 @@
 
 - [Leaflet](https://leafletjs.com/) - Map Library
 
-- [ESLint](https://github.com/eslint/eslint) — To find bugs in your code according to specific rules
+- [ESLint](https://github.com/eslint/eslint) — To find bugs ipn your code according to specific rules
 
 - [react-leaflet](https://react-leaflet.js.org/) — react-leaflet is a third party leaflet library
 
