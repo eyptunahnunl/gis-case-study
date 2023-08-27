@@ -5,6 +5,11 @@ import TabPanel from "@mui/joy/TabPanel";
 import { Button } from "components/UI";
 import { useContext } from "react";
 import UIControlContext from "context/UIControlContext";
+import {
+  LoadTIFF,
+  LoadVectorData,
+  LoadWMS,
+} from "components/Tools";
 
 function Toolbox() {
   const { toolBox, setToolBox } = useContext(
@@ -25,15 +30,15 @@ function Toolbox() {
             </TabList>
             <TabPanel value={0}>
               vector
-              {/* <UploadData /> */}
+              <LoadVectorData />
             </TabPanel>
             <TabPanel value={1}>
               wms
-              {/* <LoadWMS /> */}
+              <LoadWMS />
             </TabPanel>
             <TabPanel value={2}>
               raster
-              {/* <LoadTIFF /> */}
+              <LoadTIFF />
             </TabPanel>
           </Tabs>
         </div>
