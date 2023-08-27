@@ -37,4 +37,4 @@ This project includes simple GIS analyses, queries, SLD definitions and database
 
 ## MIT License
 
-Copyright (c) 2022 Eyup Tunahan Unal YGDMap-project is free software and may be redistributed under the MIT-LICENSE.
+Copyright (c) 2022 Eyup Tunahan Unal gis-case-study is free software and may be redistributed under the MIT-LICENSE.
