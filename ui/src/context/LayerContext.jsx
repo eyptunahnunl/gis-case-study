@@ -40,18 +40,17 @@ export const LayersProvider = ({ children }) => {
     const endpoints = [
       {
         name: "pharmacy",
-
         url: "/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ne%3Apharmacy_on_duty&maxFeatures=50&outputFormat=application%2Fjson",
         layerId: 0,
       },
       {
-        name: "applicant 1",
+        name: "applicant",
         url: "/ne/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ne%3Aapplicants&maxFeatures=50&outputFormat=application%2Fjson",
         layerId: 1,
       },
 
       {
-        name: "Endpoint 3",
+        name: "mining area",
         url: "/ne/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ne%3Aminingarea&maxFeatures=50&outputFormat=application%2Fjson",
         layerId: 2,
       },

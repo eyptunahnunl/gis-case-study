@@ -48,14 +48,13 @@ function TileLayers() {
               key={index}
             >
               <WMSTileLayer
-                // layers={"AlmanMavileriOsmanlica500_1000"}
                 params={{
-                  layers: item.layer,
                   transparent: true,
+                  layers: item.layer,
+                  format: "image/png",
 
                   // request: "test",
                 }}
-                // layers={item.layer}
                 url={item.url}
               />
             </LayersControl.BaseLayer>

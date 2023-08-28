@@ -40,7 +40,6 @@ function Toolbox() {
               <LoadVectorData />
             </TabPanel>
             <TabPanel value={1}>
-              load wms
               <LoadWMS />
             </TabPanel>
             <TabPanel value={2}>
