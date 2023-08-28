@@ -16,10 +16,8 @@
 
 ### 1. Clone the Repo:
 
-```bash
+````bash
 git clone https://github.com/eyptunahnunl/gis-case-study.git
-cd ui
-```
 
 ### 2. Install Dependencies:
 
@@ -27,7 +25,7 @@ cd ui
 
 ```bash
 npm install
-```
+````
 
 ### 3. Run the Development Environment:
 
