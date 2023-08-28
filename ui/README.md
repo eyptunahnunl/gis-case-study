@@ -17,8 +17,8 @@
 ### 1. Clone the Repo:
 
 ```bash
-git clone https://github.com/eyptunahnunl/ygdmap-project.git
-cd ygdmap-ui
+git clone https://github.com/eyptunahnunl/gis-case-study.git
+cd ui
 ```
 
 ### 2. Install Dependencies:
